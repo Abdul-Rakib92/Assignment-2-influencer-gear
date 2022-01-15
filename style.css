@@ -14,8 +14,8 @@ body{
 ------------------- */
 
 .container{
-    max-width: 1200px;
-    margin: 0;
+    width: 1200px;
+    margin-left: 40px;
     padding: 0 40px;
 }
 .btn{
@@ -42,35 +42,13 @@ nav{
     height: 70px;
     align-items: center;
 }
-.navigation{
-    display: flex;
-}
-.navigation li{
-    list-style: none;
-    margin: 15px;
-}
-.navigation li a{
-    text-decoration: none;
-    color: rgb(73, 68, 68);
-    font-weight: 700;
-    padding: 15px 10px;
-}
-#nav-toggler{
-    display: none;
-}
-.nav-toggler-icon{
-    display: none;
-   font-size: 30px;
-}
+
 
 /* Influencer */
 
 .influencer{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /* height: 100vh;
-    min-height: 500px; */
-    
+    grid-template-columns: repeat(2, 1fr);  
 }
 .influencer-text{
     display: flex;
@@ -121,7 +99,6 @@ hr{
 
 .logo-photo{
     margin: 100px;
-    /* height: 700px; */
     padding: 40px;
 }
 .logo-photo img{
@@ -262,3 +239,135 @@ footer p{
     word-spacing: 15px;
     cursor: pointer;
 }
+
+
+/*..............
+  media query
+ ...............*/
+
+ @media (max-width: 950px) {
+     
+    .container{
+        box-sizing: border-box;
+        width: 500px;
+        margin-left: 50px;
+        padding: 0 10px;
+    }
+
+    .navigation li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 25px;
+    }
+    .navigation li a{
+        padding: 15px 10px;
+    }
+    
+    .products, .influencer{
+        grid-template-columns: 1fr 1fr;
+    }
+    .contact-detail{
+        grid-template-columns: 1fr;
+    }
+
+    .btn{
+        font-size: 15px;
+    }
+
+    .influencer-text{
+        width: 300px;
+    }
+    .influencer-text h1{
+        font-size: 35px;
+        margin-top: 20px;
+    }
+    
+    .influencer-text p{
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    
+    .influencer-photo{
+        margin-left: 50px;  
+    }
+    .svg{
+        width: 300px;
+        margin-top: 70px;
+    }
+    .png{
+        width: 250px;
+        left: 30px;
+        top: 120px;
+    }
+
+    .arrow-btn{
+        margin: 30px 0px 30px 80px; 
+    }
+
+ }
+
+
+
+
+ @media (max-width: 500px) {
+    .container{
+        box-sizing: border-box;
+        width: 400px;
+        margin-left: 20px;
+        padding: 0 10px;
+    }
+
+    .products, .influencer, .contact-detail{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn{
+        font-size: 15px;
+    }
+
+    .influencer-text{
+        width: 100%;
+    }
+
+    .influencer-text h1{
+        font-size: 35px;
+        margin-top: 20px;
+    }
+    
+    .influencer-text p{
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    
+    .influencer-photo{
+        margin-left: 50px;  
+    }
+
+    .svg{
+        width: 300px;
+        margin-top: 70px;
+    }
+
+    .png{
+        width: 250px;
+        left: 30px;
+        top: 120px;
+    }
+
+    .arrow-btn{
+        margin: 30px 0px 30px -90px; 
+    }
+
+    .contact-photo img{
+        width: 400px;
+        height: 300px;
+    }
+    
+    .contact-text{
+        width: 100%;
+        font-size: 18px;
+    }
+
+ }
