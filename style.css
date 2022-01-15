@@ -140,6 +140,7 @@ hr{
 
 /* products collection start */
 
+
 .section-title{
     text-align: center;
     margin: 70px 0;
@@ -200,12 +201,44 @@ hr{
     color: rgb(88, 90, 92);
 }
 
+
 .arrow-btn{
+    display: flex;
+    background-color: violet;
     color: mediumvioletred;
-    font-size: 17px;
+    font-size: 18px;
     border: none;
     background-color: white;
-    margin: 30px 850px;
-    padding: 10px 50px;
+    margin: 30px 550px;
+    padding: 10px 30px 10px 100px;
     font-weight: 700;
+}
+
+
+/* Contact css */
+
+.contact-detail{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    margin-bottom: 10px;
+}
+
+.contact-photo img{
+    width: 500px;
+    height: 400px;
+}
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-text{
+    width: 100%;
+    margin: 15px 0;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px solid mediumvioletred;
 }
