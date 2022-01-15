@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+/*-----------------
+   common css
+------------------- */
+
+.container{
+    max-width: 1200px;
+    margin: 0;
+    padding: 0 40px;
+}
+.btn{
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: mediumvioletred;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+    cursor: pointer;
+}
+button .fas{
+    margin-left: 5px;
+}
+/* ------------
+header start
+--------------- */
+
+/* navbar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+}
+.navigation{
+    display: flex;
+}
+.navigation li{
+    list-style: none;
+    margin: 15px;
+}
+.navigation li a{
+    text-decoration: none;
+    color: rgb(73, 68, 68);
+    font-weight: 700;
+    padding: 15px 10px;
+}
+#nav-toggler{
+    display: none;
+}
+.nav-toggler-icon{
+    display: none;
+   font-size: 30px;
+}
+
+/* Influencer */
+
+.influencer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* height: 100vh;
+    min-height: 500px; */
+    
+}
+.influencer-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.influencer-text h1{
+    font-size: 40px;
+    color: rgb(53, 48, 48);
+}
+span{
+    color: mediumvioletred;
+}
+.influencer-text p{
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 20px;
+    margin-right: 20px;
+    text-align: justify;
+
+}
+
+.influencer-photo{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.svg{
+    width: 400px;
+    margin-top: 70px;
+}
+.png{
+    width: 300px;
+    position: absolute;
+    left: 110px;
+    top: 140px;
+    transition: transform 2s ease-in;
+    
+}
+.png:hover{
+    transform: scale(1.4);
+}
