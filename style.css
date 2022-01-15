@@ -242,3 +242,23 @@ hr{
     border-radius: 5px;
     border: 2px solid mediumvioletred;
 }
+
+/* footer */
+
+footer{
+    background-color: rgba(2, 4, 36, 0.993);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+footer p{
+    font-size: 26px;
+    padding-bottom: 20px;
+}
+.footer-icon{
+    font-size: 23px;
+    color: rgb(221, 222, 233);
+    padding-top: 15px;
+    word-spacing: 15px;
+    cursor: pointer;
+}
